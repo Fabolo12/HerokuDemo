@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.heroku.Main
+web: java $JAVA_OPTS -jar .\target\HerokuDemo-1.0-SNAPSHOT.jar
