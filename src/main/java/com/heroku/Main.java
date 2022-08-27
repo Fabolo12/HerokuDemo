@@ -3,6 +3,8 @@ package com.heroku;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Main {
     static final String JDBC_DRIVER = "org.postgresql.Driver";
@@ -39,5 +41,9 @@ public class Main {
         } else {
             System.out.println("Failed to make connection to database");
         }
+
+        final LocalDateTime now = LocalDateTime.now();
+        final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        System.out.println("Today is " + now.format(formatter));
     }
 }
