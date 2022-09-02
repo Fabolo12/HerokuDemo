@@ -45,5 +45,7 @@ public class Main {
         final LocalDateTime now = LocalDateTime.now();
         final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         System.out.println("Today is " + now.format(formatter));
+
+        System.out.println("NOX 12");
     }
 }
